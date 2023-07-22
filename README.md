@@ -2,28 +2,14 @@
 
 The aim of this project is to analyze crowdfunding platforms like Kickstarter and Indigogo to make sound observations based on the data and help determine any trends to a successful campaign.
 
-## Observations
-From the Category Analysis, ***journalism campaigns have a 100% success rate, while games has the least success rate of 43%.*** *Campaigns with success rate >= 60% are photography and publishing.*
 
-![Category_Stats](Images/Category_Stats.png)
+## Additional Plots and Limitations
 
-From the Sub-Category Analysis, ***audio and world music have a 100% success rate, while mobile games campaign has the least success rate of 30%.*** *Campaigns with >= 60% success rate are animation, non-fiction, photography books, television, translations, wearables and web.*
-
-![Sub-category_Stats](Images/Sub-category_Stats.png)
-
-From the Outcome Based on Launch Date Analysis, ***June is the month with the highest success rate of 64% and August is the month with the least success rate of 48%.*** *Campaigns with success rate >= 60% were launched in the months of June, July, Spetember and November.* 
-
-![Launch-date_Stats](Images/Launch-date_Stats.png)
-
-From the Crowndfunding Based on Goal analysis, it can be determined that ***campaigns with goals, 15000 to 19999, 20000 to 24999 and 30000 to 34999 have a success rate of 100%.*** And the ***campaigns with a goal of >= 50000 has the least success rate of 37%.***
-*Campaigns with a success rate of >= 60% have a goal of $15000 upto $50000 and $1000 upto $5000.*
-
-![Goal_Stats](Images/Goal_Stats.png)
-
-### Additional Columns 
----
+A pivot chart of columns with pledged amount per category filtered by year and country followed by a line chart to determine how many donations each category was able to raise over the years for each country would've been an excellent indication for users to know which category showed highest promise of being successful. 
 
 Adding the success percentage for each of the pivot tables would greatly help in determining the best campaigns in category, sub-category, outcomes based on launch date and outcomes based on goal amount. 
+
+Data is very limited with prime focus on US and a handful of countries. Accumulating more data on these campaigns globally would also be a good indicator of what campaigns move and generate most donations from public. Capturing the pulse of the donors for successful campaigns would also be a valuable addition to the dataset. 
 
 ## Statistical Analysis Observation
 I think the ***Median value better summarizes the data***, as it can be used to present the data as a normal distribution, with values of the dataset falling equally on both sides of the median.  
@@ -34,7 +20,17 @@ We have a total of 364 failed campaigns based on backers count. Out of which, 18
 
 I believe there is more or less *equal variability with both successful and failed campaigns.*
 
-![Statistical_Analysis](Images/Statistical_Analysis.png)
+## Observations Based on the Pivot Tables 
+
+From the **Crowndfunding Based on Goal analysis,** it can be determined that ***campaigns with goals, 15000 to 19999, 20000 to 24999 and 30000 to 34999 have a success rate of 100%, while campaigns with a goal amount >= 50000 USD have the least chance of succeeding at 37%*** 
+
+From the countries perspective, there are a total of 7 countries, with ***USA having the most number of crowdfunding campaigns and Switzerland (CH) having the least number of crowdfunding campaigns.*** 
+
+From Category and Sub-Category Analysis, ***in parent category, theatre campaigns are the highest in most countries and in sub-category, plays has by far the highest number campaigns in every country*** 
+
+From the Outcome Based on Launch Date Analysis, ***in the 10 years of data presented from 2010 to 2020, 57% campaigns were successful, 37% campaigns failed and 6% campaigns were cancelled*** 
+
+
 
 ## How to install and run the code
 
@@ -50,13 +46,11 @@ Additionally, I used the knowledge from the third class to compute the statistic
 
 ## References
 
-https://www.google.com/search?q=how+do+you+split+a+column+into+two+in+excel&rlz=1C5GCEM_enUS1059US1059&oq=how+do+you+split+a+column+&gs_lcrp=EgZjaHJvbWUqDAgDEAAYFBiHAhiABDIGCAAQRRg5MgwIARAAGBQYhwIYgAQyBwgCEAAYgAQyDAgDEAAYFBiHAhiABDIHCAQQABiABDIHCAUQABiABDIICAYQABgWGB4yCAgHEAAYFhgeMggICBAAGBYYHjIICAkQABgWGB7SAQkxNjM0OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+https://www.indeed.com/career-advice/career-development/how-to-split-cells-into-columns-in-excel
 
+https://www.automateexcel.com/how-to/get-rid-of-dollar-sign/
 
-https://www.google.com/search?q=how+do+I+remove+the+accounting+%24+sign+from+my+column+in+excel&rlz=1C5GCEM_enUS1059US1059&oq=how+do+I+remove+the+accounting+%24+sign+from+my+column+in+excel&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE0MTY5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
-
-
-https://www.google.com/search?q=how+to+create+a+stacked+bar+chart+in+excel+pivot&rlz=1C5GCEM_enUS1059US1059&sxsrf=AB5stBjNheF9B8yWjE7IHbkTRe2wjwcs0A%3A1689560904532&ei=SKe0ZLaKIPzbkPIP0b6LgA4&oq=how+to+create+a+stacked+bar+chart+in+excel+&gs_lp=Egxnd3Mtd2l6LXNlcnAiK2hvdyB0byBjcmVhdGUgYSBzdGFja2VkIGJhciBjaGFydCBpbiBleGNlbCAqAggDMgUQABiABDIKEAAYgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5ImzFQtxRYtxRwAXgBkAEAmAFPoAFPqgEBMbgBAcgBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhD4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp#kpvalbx=_nKe0ZIvxJuHv0PEP1oW2yAU_35
+https://www.extendoffice.com/documents/excel/4277-excel-stacked-chart-from-pivot-table.html
 
 https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html
 
